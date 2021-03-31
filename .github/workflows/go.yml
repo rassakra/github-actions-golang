@@ -23,6 +23,10 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: Run build script
+      run: ./.github/scripts/build.sh
+      shell: bash
   test:
     strategy:
       matrix:
